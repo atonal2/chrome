@@ -52,8 +52,8 @@ install_browser() {
     read -p "Enter PASSWORD: " PASSWORD
     # read -p "Specify HOME directory (default is current): " HOME_DIR
     HOME_DIR=${HOME_DIR:-$(pwd)}
-    read -p "Enter PORT (default is 10000): " PORT
-    PORT=${PORT:-10000}
+    read -p "Enter PORT (default is 3333): " PORT
+    PORT=${PORT:-3333}
 
     # Create .env file with user data
     echo "USERNAME=${USERNAME}" > .env
