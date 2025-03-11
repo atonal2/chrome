@@ -5,7 +5,7 @@ services:
     container_name: browser
     privileged: true
     environment:
-      - TITLE=DKnodes
+      - TITLE=katana
       - DISPLAY=:1
       - PUID=1000
       - PGID=1000
