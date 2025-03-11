@@ -50,7 +50,7 @@ install_browser() {
     echo -e "${YELLOW}Configure environment variables in .env:${RESET}"
     read -p "Enter USERNAME: " USERNAME
     read -p "Enter PASSWORD: " PASSWORD
-    read -p "Specify HOME directory (default is current): " HOME_DIR
+    # read -p "Specify HOME directory (default is current): " HOME_DIR
     HOME_DIR=${HOME_DIR:-$(pwd)}
     read -p "Enter PORT (default is 10000): " PORT
     PORT=${PORT:-10000}
