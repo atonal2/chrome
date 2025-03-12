@@ -7,15 +7,15 @@ services:
     environment:
       - TITLE=katana
       - DISPLAY=:1
-      - PUID=1000
-      - PGID=1000
+      - PUID=0
+      - PGID=0
       - CUSTOM_USER=${USERNAME}
       - PASSWORD=${PASSWORD}
       - LANGUAGE=en_US.UTF-8
-      - CHROME_CLI= https://chromewebstore.google.com/detail/bloom-extension/akdiolpnpplhaoedmednpobkhmkophmg https://web.telegram.org/a/
+      - CHROME_CLI=--no-sandbox
     volumes:
       - ${HOME}/chromium/config:/config
     ports:
       - "0.0.0.0:${PORT}:3000"  
-    shm_size: '4gb'
+    shm_size: '2gb'
     restart: unless-stopped
