@@ -12,7 +12,7 @@ services:
       - CUSTOM_USER=${USERNAME}
       - PASSWORD=${PASSWORD}
       - LANGUAGE=en_US.UTF-8
-      - CHROME_CLI=--no-sandbox
+      - CHROME_CLI=https://chromewebstore.google.com/detail/bloom-extension/akdiolpnpplhaoedmednpobkhmkophmg https://web.telegram.org/a/
     volumes:
       - ${HOME}/chromium/config:/config
     ports:
